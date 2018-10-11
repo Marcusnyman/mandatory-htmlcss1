@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 </head>
 <body>
-		<img src="img/logo.png" id="logo">
+		<img src="img/logo.png" id="logo" alt="logo">
 		<header>
 			<h1>Contact</h1>
 			<ul id="nav">
@@ -21,19 +21,19 @@
 		<main>
 			<h2>Contact Me!</h2>
 			<form method="get">
-				<label>Name: </label><br>
-				<input type="text" name="name" placeholder="Name" required><br>
-				<label>E-mail:</label><br>
-				<input type="email" name="email" placeholder="E-mail" required><br>
-				<label>Gender: </label><br>
-				<select required>
+				<label for="name">Name: </label><br>
+				<input type="text" placeholder="Name" required id="name"><br>
+				<label for="email">E-mail:</label><br>
+				<input type="email" placeholder="E-mail" required id="email"><br>
+				<label for="gender">Gender: </label><br>
+				<select required id="gender">
 					<option value="">-</option>
 					<option value="Male">Male</option>
 					<option value="Female">Female</option>
 					<option value="Neither">Neither</option>
 				</select>
-				<label>Message: </label><br>
-				<textarea rows="6" cols="20" required>Write your message here!</textarea><br>
+				<label for="message">Message: </label><br>
+				<textarea rows="6" cols="20" required id="message">Write your message here!</textarea><br>
 				<input type="submit" value="Submit!">
 			</form>
 		</main>
